@@ -15,7 +15,7 @@ if (${FG_ENABLE_STDALLOC})
 	# download
 	if (NOT EXISTS "${FG_EXTERNAL_STDALLOC_PATH}/include/foonathan/memory/config.hpp")
 		FetchContent_Declare( ExternalSTDALLOC
-			GIT_REPOSITORY		https://github.com/foonathan/memory.git
+			GIT_REPOSITORY		git@git.zhlh6.cn:foonathan/memory.git
 			GIT_TAG				master
 			SOURCE_DIR			"${FG_EXTERNAL_STDALLOC_PATH}"
 		)

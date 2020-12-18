@@ -16,7 +16,7 @@ if (${FG_ENABLE_SPIRVREFLECT})
 	if (NOT EXISTS "${FG_EXTERNAL_SPIRVREFLECT_PATH}/spirv_reflect.c")
 		FetchContent_Declare( ExternalSpirvReflect
 			# download
-			URL  				"https://github.com/KhronosGroup/SPIRV-Reflect/archive/3c77a11472a1da7830d055306b4299c5e2398e7c.zip"
+			URL  				"https://github.com.cnpmjs.org/KhronosGroup/SPIRV-Reflect/archive/3c77a11472a1da7830d055306b4299c5e2398e7c.zip"
 			DOWNLOAD_DIR		"${FG_EXTERNAL_SPIRVREFLECT_PATH}"
 			SOURCE_DIR			"${FG_EXTERNAL_SPIRVREFLECT_PATH}"
 			LOG_DOWNLOAD		1

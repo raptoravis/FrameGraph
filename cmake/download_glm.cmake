@@ -25,7 +25,7 @@ elseif (${FG_ENABLE_GLM})
 	endif ()
 
 	if (NOT EXISTS "${FG_EXTERNAL_GLM_PATH}/glm/glm.hpp")
-		set( FG_GLM_REPOSITORY "https://github.com/g-truc/glm.git" )
+		set( FG_GLM_REPOSITORY "git@git.zhlh6.cn:g-truc/glm.git" )
 	else ()
 		set( FG_GLM_REPOSITORY "" )
 	endif ()

@@ -20,7 +20,7 @@ elseif (${FG_ENABLE_OPENVR})
 	endif ()
 	
 	if (NOT EXISTS "${FG_EXTERNAL_OPENVR_PATH}/headers/openvr_capi.h")
-		set( FG_OPENVR_REPOSITORY "https://github.com/ValveSoftware/openvr.git" )
+		set( FG_OPENVR_REPOSITORY "git@git.zhlh6.cn:ValveSoftware/openvr.git" )
 	else ()
 		set( FG_OPENVR_REPOSITORY "" )
 	endif ()

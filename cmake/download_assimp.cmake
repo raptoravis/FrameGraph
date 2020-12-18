@@ -23,7 +23,7 @@ elseif (${FG_ENABLE_ASSIMP})
 	endif ()
 
 	if (NOT EXISTS "${FG_EXTERNAL_ASSIMP_PATH}/include/assimp")
-		set( FG_ASSIMP_REPOSITORY "https://github.com/assimp/assimp.git" )
+		set( FG_ASSIMP_REPOSITORY "git@git.zhlh6.cn:assimp/assimp.git" )
 	else ()
 		set( FG_ASSIMP_REPOSITORY "" )
 	endif ()

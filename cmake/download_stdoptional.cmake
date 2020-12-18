@@ -15,7 +15,7 @@ if (NOT ${STD_OPTIONAL_SUPPORTED})
 	# download
 	if (NOT EXISTS "${FG_EXTERNAL_STDOPTIONAL_PATH}/optional.hpp")
 		FetchContent_Declare( ExternalStdOpt
-			GIT_REPOSITORY		https://github.com/akrzemi1/Optional.git
+			GIT_REPOSITORY		git@git.zhlh6.cn:akrzemi1/Optional.git
 			SOURCE_DIR			"${FG_EXTERNAL_STDOPTIONAL_PATH}"
 			GIT_TAG				master
 		)

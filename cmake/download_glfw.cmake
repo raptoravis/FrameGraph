@@ -22,7 +22,7 @@ if (${FG_ENABLE_GLFW})
 	# download
 	if (NOT EXISTS "${FG_EXTERNAL_GLFW_PATH}/include/GLFW/glfw3.h")
 		FetchContent_Declare( ExternalGLFW
-			GIT_REPOSITORY		"https://github.com/glfw/glfw.git"
+			GIT_REPOSITORY		"git@git.zhlh6.cn:glfw/glfw.git"
 			GIT_TAG				${GLFW_TAG}
 			SOURCE_DIR			"${FG_EXTERNAL_GLFW_PATH}"
 		)

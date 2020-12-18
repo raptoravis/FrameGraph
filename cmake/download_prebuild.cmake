@@ -28,7 +28,7 @@ if (${FG_EXTERNALS_USE_PREBUILD})
 	endif ()
 
 	
-	set( EXTERNAL_REPOSITORY "https://github.com/azhirnov/FrameGraph-External.git" )
+	set( EXTERNAL_REPOSITORY "git@git.zhlh6.cn:azhirnov/FrameGraph-External.git" )
 	
 	if (EXISTS "${FG_EXTERNAL_PREBUILD_PATH}")
 		execute_process(
