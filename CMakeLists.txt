@@ -119,6 +119,8 @@ if (${FG_ENABLE_TESTS})
 	add_subdirectory( "tests/android" )
 endif ()
 
+add_subdirectory( "tests/testbed" )
+
 message( STATUS "project 'FrameGraph' generation ended" )
 message( STATUS "\n==========================================================================" )
 
