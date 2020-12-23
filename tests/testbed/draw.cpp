@@ -6,7 +6,7 @@
 namespace FG
 {
 
-	bool FGApp::testbed()
+	bool FGApp::testBed()
 	{
 		if (not _pplnCompiler)
 		{
@@ -55,9 +55,8 @@ void main() {
 }
 )#");
 
-		GPipelineID		pipeline = _frameGraph->CreatePipeline(ppln);
+		GPipelineID	pipeline = _frameGraph->CreatePipeline(ppln);
 		CHECK_ERR(pipeline);
-
 
 		CommandBuffer	cmd = _frameGraph->Begin(CommandBufferDesc{}.SetDebugFlags(EDebugFlags::Default));
 		CHECK_ERR(cmd);
@@ -77,13 +76,11 @@ void main() {
 		CHECK_ERR(_frameGraph->Execute(cmd));
 		CHECK_ERR(_frameGraph->WaitIdle());
 
-		CHECK_ERR(CompareDumps(TEST_NAME));
-		CHECK_ERR(Visualize(TEST_NAME));
+		//CHECK_ERR(CompareDumps(TEST_NAME));
+		//CHECK_ERR(Visualize(TEST_NAME));
 
 		DeleteResources(pipeline);
 
-		FG_LOGI(TEST_NAME << " - passed");
 		return true;
 	}
-
 }	// FG

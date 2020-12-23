@@ -83,7 +83,8 @@ namespace FG
 
 		// drawing tests
 	private:
-		bool testbed();
+
+		bool testBed();
 	};
 
 

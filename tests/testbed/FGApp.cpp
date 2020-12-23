@@ -31,7 +31,7 @@ namespace FG
 	*/
 	FGApp::FGApp()
 	{
-		_tests.push_back({ &FGApp::testbed,	1 });
+		//
 	}
 
 	/*
@@ -184,36 +184,11 @@ namespace FG
 		if (not _window->Update())
 			return false;
 
-		if (not _tests.empty())
-		{
-			TestFunc_t	func = _tests.front().first;
-			const uint	max_invoc = _tests.front().second;
-			bool		passed = (this->*func)();
-
-			if (_testInvocations == 0)
-			{
-				_testsPassed += uint(passed);
-				_testsFailed += uint(not passed);
-			}
-
-			if ((not passed) or (++_testInvocations >= max_invoc))
-			{
-				_tests.pop_front();
-				_testInvocations = 0;
-
-				// reset
-				String	temp;
-				_frameGraph->DumpToGraphViz(OUT temp);
-				_frameGraph->DumpToString(OUT temp);
-			}
-		}
-		else
+		if (!this->testBed())
 		{
 			_window->Quit();
-
-			FG_LOGI("Tests passed: " + ToString(_testsPassed) + ", failed: " + ToString(_testsFailed));
-			CHECK_FATAL(_testsFailed == 0);
 		}
+
 		return true;
 	}
 
