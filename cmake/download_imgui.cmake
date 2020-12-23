@@ -21,7 +21,7 @@ elseif (${FG_ENABLE_IMGUI})
 	endif ()
 
 	if (NOT EXISTS "${FG_EXTERNAL_IMGUI_PATH}/imgui.h")
-		set( FG_IMGUI_REPOSITORY "https://github.com/ocornut/imgui.git" )
+		set( FG_IMGUI_REPOSITORY "git@git.zhlh6.cn:ocornut/imgui.git" )
 	else ()
 		set( FG_IMGUI_REPOSITORY "" )
 	endif ()

@@ -15,7 +15,7 @@ if (NOT ${STD_VARIANT_SUPPORTED})
 	# download
 	if (NOT EXISTS "${FG_EXTERNAL_STDVARIANT_PATH}/include/mpark/variant.hpp")
 		FetchContent_Declare( ExternalStdVar
-			GIT_REPOSITORY		https://github.com/mpark/variant.git
+			GIT_REPOSITORY		git@git.zhlh6.cn:mpark/variant.git
 			SOURCE_DIR			"${FG_EXTERNAL_STDVARIANT_PATH}"
 			GIT_TAG				master
 		)

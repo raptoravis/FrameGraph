@@ -19,7 +19,7 @@ if (${FG_ENABLE_LODEPNG})
 		endif ()
 
 		FetchContent_Declare( ExternalLodePNG
-			GIT_REPOSITORY		https://github.com/lvandeve/lodepng.git
+			GIT_REPOSITORY		git@git.zhlh6.cn:lvandeve/lodepng.git
 			GIT_TAG				master
 			SOURCE_DIR			"${FG_EXTERNAL_LODEPNG_PATH}"
 			PATCH_COMMAND		${CMAKE_COMMAND} -E copy

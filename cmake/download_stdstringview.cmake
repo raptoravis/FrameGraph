@@ -15,7 +15,7 @@ if (NOT ${STD_STRINGVIEW_SUPPORTED})
 	# download
 	if (NOT EXISTS "${FG_EXTERNAL_STDSTRINGVIEW_PATH}/include/nonstd/string_view.hpp")
 		FetchContent_Declare( ExternalStdStrView
-			GIT_REPOSITORY		https://github.com/martinmoene/string-view-lite.git
+			GIT_REPOSITORY		git@git.zhlh6.cn:martinmoene/string-view-lite.git
 			SOURCE_DIR			"${FG_EXTERNAL_STDSTRINGVIEW_PATH}"
 			GIT_TAG				master
 		)

@@ -22,7 +22,7 @@ if (${FG_ENABLE_VMA})
 	# download
 	if (NOT EXISTS "${FG_EXTERNAL_VMA_PATH}/src/vk_mem_alloc.h")
 		FetchContent_Declare( ExternalVMA
-			GIT_REPOSITORY		https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git
+			GIT_REPOSITORY		git@git.zhlh6.cn:GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git
 			SOURCE_DIR			"${FG_EXTERNAL_VMA_PATH}"
 			GIT_TAG				${VMA_TAG}
 		)

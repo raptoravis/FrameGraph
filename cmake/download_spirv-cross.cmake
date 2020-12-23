@@ -25,7 +25,7 @@ if (FALSE)
 		LOG_OUTPUT_ON_FAILURE 1
         LIST_SEPARATOR		"${FG_LIST_SEPARATOR}"
 		# download
-		GIT_REPOSITORY		"https://github.com/KhronosGroup/SPIRV-Cross.git"
+		GIT_REPOSITORY		"git@git.zhlh6.cn:KhronosGroup/SPIRV-Cross.git"
 		GIT_TAG				${SPIRVCROSS_TAG}
 		GIT_PROGRESS		1
 		# update

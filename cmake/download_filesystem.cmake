@@ -22,7 +22,7 @@ if (NOT ${STD_FILESYSTEM_SUPPORTED})
 	# download
 	if (NOT EXISTS "${FG_EXTERNAL_GFS_PATH}/include/ghc/filesystem.hpp")
 		FetchContent_Declare( ExternalGFS
-			GIT_REPOSITORY		"https://github.com/gulrak/filesystem.git"
+			GIT_REPOSITORY		"git@git.zhlh6.cn:gulrak/filesystem.git"
 			SOURCE_DIR			"${FG_EXTERNAL_GFS_PATH}"
 			GIT_TAG				${GFS_TAG}
 		)
