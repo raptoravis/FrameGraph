@@ -7,7 +7,7 @@ else ()
 endif ()
 
 source_group( TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${SOURCES} )
-set_property( TARGET "testbed" PROPERTY FOLDER "Tests" )
+set_property( TARGET "testbed" PROPERTY FOLDER "" )
 
 target_include_directories( "testbed" PRIVATE "../../framegraph/Vulkan" )
 target_include_directories( "testbed" PRIVATE "../../framegraph/Vulkan/Buffer" )
